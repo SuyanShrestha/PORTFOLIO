@@ -1,0 +1,105 @@
+.hero{
+    height: calc(100vh - 104px);
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    // background: url('cover.jpg');
+    overflow: hidden;
+    position: relative;
+    // z-index: -1;
+
+    .wrapper{
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+
+        .textContainer{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+            letter-spacing: 0.6rem;
+
+            h2{
+                font-size: 2rem;
+                color: rebeccapurple;
+            }
+
+            h1{
+                font-size: 4rem;
+            }
+
+            .buttons{
+                z-index: 1;
+                button{
+                    padding: 1.5rem;
+                    border: 1px solid white;
+                    border-radius: 1rem;
+                    background: transparent;
+                    color: white;
+                    margin-right: 2rem;
+                    cursor: pointer;
+                    // font-weight: 300;
+                    font-size: 1rem;
+                    // display: flex;
+                    // gap: 2rem;
+                }
+            }
+
+            img{
+                width: 50px;
+            }
+        }
+    }
+
+    .imageContainer{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 20%;
+    }
+
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 50vh;
+        bottom: -7rem;
+        white-space: nowrap;
+        color: #ffffff23;
+        width: 50%;
+        font-weight: bolder;
+        // z-index: -2;
+        
+    }
+    .imageContainer>img {
+        // box-shadow: 0 20px 5px 5px rgba(255, 255, 255, 0.2);
+        animation: blob-animate 5s ease-in-out infinite;
+        transition: all 1s ease-in-out;
+        border: 2px solid whitesmoke;
+        width: 30vw;
+        height: 60vh;
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        // padding: 1rem;
+
+        object-fit: cover;
+        object-position: 20% 0 0 0;
+    }
+
+    @keyframes blob-animate {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+        }
+    }
+}

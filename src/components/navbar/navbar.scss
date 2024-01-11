@@ -1,0 +1,30 @@
+.navbar{
+    height: 6.5rem;
+    // background: yellow;
+    // margin-top: 0;
+
+    .wrapper{
+        max-width: 1366px;
+        width: 80rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // background: blue;
+        height: 100%;
+
+        span{
+            font-weight: bold;
+        }
+
+        .social{
+            display: flex;
+            gap: 1.5rem;
+
+            img{
+                height: 1rem;
+                width: 1rem;
+            }
+        }
+    }
+}

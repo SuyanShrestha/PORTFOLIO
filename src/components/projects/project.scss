@@ -1,0 +1,80 @@
+.project{
+    position: relative;
+    .progress{
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 3.25rem;
+        text-align: center;
+        color: orange;
+        font-size: 2rem;
+
+        .progressBar{
+            height: 10px;
+            background-color: white;
+        }
+    } 
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;     
+
+        .wrapper {
+            max-width: 1366px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3.5rem;
+                  
+            .imageContainer{
+                flex: 1;
+                height: 50%;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+            .textContainer{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                
+
+                h2{
+                    font-size: 3.25rem;
+                }
+                p{
+                    color: gray;
+                    font-size: 1.25rem;
+                }
+                .buttons{
+                    display: flex;
+                    gap: 1.25rem;
+
+                    button{
+                        background-color: orange;
+                        border: none;
+                        border-radius: 1rem;
+                        width: 8rem;
+                        height: 2.75rem;
+                        cursor: pointer;
+
+                        display: flex;
+                        gap: 0.4rem;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
